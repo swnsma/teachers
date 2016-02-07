@@ -1,0 +1,34 @@
+{
+  "teachers": [
+    {
+      "name": "Teacher1",
+      "id": 1,
+      "vote": 1,
+      "img": "img/img1.jpeg"
+    },
+    {
+      "name": "Teacher2",
+      "id": 2,
+      "vote": 0,
+      "img": "img/img2.png"
+    },
+    {
+      "name": "Teacher3",
+      "id": 3,
+      "vote": 0,
+      "img": "img/img3.png"
+    },
+    {
+      "name": "Teacher4",
+      "id": 4,
+      "vote": 0,
+      "img": "img/img3.png"
+    },
+    {
+      "name": "Teacher4",
+      "id": 4,
+      "vote": 0,
+      "img": "img/img3.png"
+    }
+  ]
+}

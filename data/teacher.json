@@ -1,0 +1,22 @@
+{
+  "teacher": {
+    "id": "1",
+    "name": "The Teacher",
+    "img": "img/img1.jpeg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "status": [
+      {"id": "option1",
+      "label": "Short option description",
+      "value": ""},
+      {"id": "option3",
+        "label": "Short option2 description",
+        "value": "2"},
+      {"id": "option2",
+        "label": "Short option3 description",
+        "value": "3"},
+      {"id": "option4",
+        "label": "Short option4 description",
+        "value": ""}
+    ]
+  }
+}

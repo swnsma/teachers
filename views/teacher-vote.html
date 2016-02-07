@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="img">
+        <img ng-src="{{teacher.img}}"/>
+    </div>
+    <h1 class="name">{{teacher.name}}</h1>
+    <div class="description">{{teacher.description}}</div>
+    <div class="votes">
+        <div ng-repeat="option in teacher.options">
+            <div class="row">
+                <div class="col-sm-3">
+                    <label>{{option.label}}</label>
+                </div>
+                <div class="col-sm-9 btn-group" data-toggle="buttons">
+                    <label class="btn btn-default" ng-repeat="point in option.points" ng-class="{'active': $index===option.value-1}">
+                        <input ng-click="option.vote(teacher.id, $index)" ng-disabled="!option.revoute" type="radio"
+                               ng-checked="point.checked" name="{{option.id}}" >
+                        {{$index+1}}
+                    </label>
+                    <span>{{option.timeOut}}</span>
+                    <button class="btn btn-info" ng-click="option.enableRevote()" ng-hide="option.revoute">Переголосовать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
