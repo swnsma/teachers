@@ -34,3 +34,12 @@
 .teacher-name {
     font-size: 20px;
 }
+.vote-option {
+    margin-top: 20px;
+}
+.vote-option label {
+    margin-right: 20px;
+}
+.disabled {
+    background-color: darkgray;
+}

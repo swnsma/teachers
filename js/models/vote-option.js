@@ -12,13 +12,13 @@ function VoteOption(data, $http)
     }
     self.vote = function(teacher, $index) {
         if(self.value!= $index+1) {
-            $http.post('/vote', {id: teacher, option: self.id, value: $index+1})
-                .then(
-                function() {
+            //$http.post('/vote', {id: teacher, option: self.id, value: $index+1})
+            //    .then(
+            //    function() {
                     self.revoute=false;
                     self.value = $index+1;
-                }
-            )
+            //    }
+            //)
         }
     };
     self.enableRevote = function() {

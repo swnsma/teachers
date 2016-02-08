@@ -1,4 +1,5 @@
 <div class="container">
+    <div class="back"><a ng-href="#/teachers">Вернуться к  списку преподавателей</a></div>
     <div class="img">
         <img ng-src="{{teacher.img}}"/>
     </div>
@@ -6,12 +7,12 @@
     <div class="description">{{teacher.description}}</div>
     <div class="votes">
         <div ng-repeat="option in teacher.options">
-            <div class="row">
+            <div class="row vote-option">
                 <div class="col-sm-3">
                     <label>{{option.label}}</label>
                 </div>
                 <div class="col-sm-9 btn-group" data-toggle="buttons">
-                    <label class="btn btn-default" ng-repeat="point in option.points" ng-class="{'active': $index===option.value-1}">
+                    <label class="btn btn-default" ng-repeat="point in option.points" ng-class="{'active': $index===option.value-1, disabled: !option.revoute }">
                         <input ng-click="option.vote(teacher.id, $index)" ng-disabled="!option.revoute" type="radio"
                                ng-checked="point.checked" name="{{option.id}}" >
                         {{$index+1}}

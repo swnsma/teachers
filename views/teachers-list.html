@@ -1,7 +1,7 @@
 <div class="container">
     <div class="col-sm-4 teacher-list-item"  ng-repeat="teacher in teachers| orderBy: ['vote', 'name']">
         <div class="col-sm-12">
-            <a href="#/teacher/{{teacher.id}}">
+            <a ng-href="#/teacher/{{teacher.id}}">
                 <div class="teacher-img" ng-class="{'vote': teacher.vote, 'unvote': !teacher.vote}"
                  ng-style="{'background': 'url(' + teacher.img+ ')  no-repeat center top / cover' }">
                 </div>
