@@ -22,6 +22,6 @@ function VoteOption(data, $http)
         }
     };
     self.enableRevote = function() {
-      self.revoute=true;
+        self.revoute=true;
     };
 }
