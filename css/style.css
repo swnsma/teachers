@@ -1,45 +1,48 @@
-.vote{
-    border: 3px solid red;
-    opacity: 0.5;
-}
-.unvote {
-    border: 1px solid deepskyblue;
-}
-.teacher-list-item {
-    margin-bottom: 20px;
-    text-align: center;
-}
-.img {
-    text-align: center;
-}
-.name{
-    text-align: center;
-}
+
 .votes {
-    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.option {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:  black;
 }
 .teacher-img::before{
     content: "";
     display: block;
     padding-top: 100% !important;
 }
-.teacher-list-item a {
-    text-decoration: inherit;
-    color: inherit;
+.teacher-item {
+    border-right: 1px inset lightgray;
+    margin: 2px 0;
 }
-.teacher-list-item img {
-    width: auto;
-    border-radius: 10px;
+hr {
+    margin: 5px 5px 5px 13.5%;
 }
-.teacher-name {
-    font-size: 20px;
-}
-.vote-option {
-    margin-top: 20px;
-}
-.vote-option label {
-    margin-right: 20px;
+.row {
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .disabled {
     background-color: darkgray;
+}
+.votes input[disabled="disabled"] {
+    color: red;
+}
+.done {
+    background-color: limegreen;
+}
+.collapse-mark{
+    border: 3px solid black;
+    border-radius: 100%;
+    width: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
 }

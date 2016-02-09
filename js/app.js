@@ -5,15 +5,11 @@ var app = angular.module('TeachersVote', [
 app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider
-            .when('/teachers', {
-                templateUrl: 'views/teachers-list.html',
-                controller: 'TeacherListController'
+            .when('/', {
+                templateUrl: 'views/votes.html',
+                controller: 'VoteController'
             }).otherwise({
-                redirectTo:'/teachers'
-            })
-            .when('/teacher/:id', {
-                templateUrl: 'views/teacher-vote.html',
-                controller: 'TeacherVoteController'
-            })
+                redirectTo:'/'
+            });
     }
 ]);

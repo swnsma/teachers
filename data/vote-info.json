@@ -1,0 +1,48 @@
+{
+  "options": [
+    {
+      "id": "option1",
+      "label": "Short option description"
+    },
+    {
+      "id": "option3",
+      "label": "Short option2 description"
+    },
+    {
+      "id": "option2",
+      "label": "Short option3 description"
+    },
+    {
+      "id": "option4",
+      "label": "Short option4 description"
+    }
+  ],
+  "teachers": [{
+    "id": "1",
+    "name": "The Teacher",
+    "img": "img/img1.jpeg",
+    "status": [
+      {"option3": "2"},
+      {"option2": "3"}
+    ]},
+    {
+      "id": "2",
+      "name": "The Teacher 2",
+      "img": "img/img2.png",
+      "status": [
+        {"option1": "4"},
+        {"option3": "2"},
+        {"option2": "3"}
+      ]},
+    {
+      "id": "3",
+      "name": "The Teacher 3",
+      "img": "img/img3.png",
+      "status": [
+        {"option1": "1"},
+        {"option3": "2"},
+        {"option2": "3"},
+        {"option4": "4"}
+      ]}
+  ]
+}

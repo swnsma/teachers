@@ -1,5 +1,5 @@
-app.factory('teachers', ['$http', function($http) {
-    return $http.get('data/teachers.json')
+app.factory('VoteOptions', ['$http', function($http) {
+    return $http.get('data/vote-info.json')
         .success(function(data) {
             return data;
         })
