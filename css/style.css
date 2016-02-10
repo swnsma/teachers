@@ -1,14 +1,30 @@
-
+.odd {
+    position: relative;
+    background: rgb(246,246,246);
+    background: rgba(0,0,0,0.04);
+}
 .votes {
     margin-bottom: 10px;
+    display: none;
 }
 .option {
-    background-color: darkgray;
-    border-radius: 20px;
     padding: 5px 10px;
     font-size: 20px;
-    font-weight: bolder;
+    padding: 20px;
     color:  black;
+    cursor: pointer;
+    font-family: georgia,serif;
+    font-weight: normal;
+    font-style: italic;
+}
+.plus {
+    background: transparent url('../img/expander-plus.png') 20px center no-repeat;
+}
+.minus {
+    background: transparent url('../img/expander-minus.png') 20px center no-repeat;
+}
+.option > * {
+    cursor: pointer;
 }
 .teacher-img::before{
     content: "";
@@ -34,15 +50,12 @@ hr {
     color: red;
 }
 .done {
-    background-color: limegreen;
+    background: rgb(165, 246, 71) !important;
+    background: rgba(0,0,0,0.04);
 }
 .collapse-mark{
-    border: 3px solid black;
-    border-radius: 100%;
-    width: 30px;
-    font-size: 20px;
-    font-weight: bolder;
     display: inline-block;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 10px;
+    padding: 5px 20px 10px 15px;
 }
