@@ -20,8 +20,7 @@ function TeacherRating(option, teacher, $http)
     };
     self.vote = function(option, $index) {
         var data = {id: self.id, questionId: option, answer: $index+1 };
-        console.log(data);
-        $http.post('/addAnswer', data, function() {
+        $http.post('/addAnswer', data).then(function() {
             self.revoute = true;
             self.value = $index+1;
         }, function() {
