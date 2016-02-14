@@ -1,4 +1,4 @@
-function VoteOption(option, teachers)
+function VoteOption(option, teachers, $http)
 {
     var self = this;
     self.id = option.id;
@@ -27,7 +27,7 @@ function VoteOption(option, teachers)
     };
 
     for(var teacher in teachers) {
-        var rating = new TeacherRating(self.id, teachers[teacher]);
+        var rating = new TeacherRating(self.id, teachers[teacher], $http);
         self.voted += rating.value?1:0;
         self.teachers.push(rating);
     }

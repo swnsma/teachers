@@ -8,9 +8,8 @@
     display: none;
 }
 .option {
-    padding: 5px 10px;
     font-size: 20px;
-    padding: 20px;
+    padding: 20px 20px 20px 5px;
     color:  black;
     cursor: pointer;
     font-family: georgia,serif;
@@ -49,6 +48,8 @@ hr {
 .votes input[disabled="disabled"] {
     color: red;
 }
+.point {
+    margin:0 5px}
 .done {
     background: rgb(165, 246, 71) !important;
     background: rgba(0,0,0,0.04);

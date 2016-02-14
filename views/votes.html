@@ -12,7 +12,7 @@
                         </div>
                     </div>
                     <div class="col-sm-10 btn-group votes-options" data-toggle="buttons">
-                        <label class="btn btn-default" ng-repeat="point in teacher.points"
+                        <label class="btn btn-default point" ng-repeat="point in teacher.points"
                                ng-class="{'active': $index === teacher.value-1, 'disabled': teacher.revoute}">
                             <input ng-disabled="teacher.revoute" type="radio"
                                    ng-checked="point.checked"
